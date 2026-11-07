@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Palette 1: The Power & Authority Palette */
+  --color-power-black: #000000;
+  --color-power-charcoal: #1D2320;
+  --color-power-crimson: #B00C11;
+  --color-power-vibrant: #CB4928;
+
+  /* Palette 2: The Modern Sport & Speed Palette */
+  --color-speed-navy: #0D2047;
+  --color-speed-electric: #4758D6;
+  --color-speed-volt: #AEE710;
+  --color-speed-slate: #64748B;
+
+  /* Palette 3: The Premium Longevity Palette */
+  --color-longevity-white: #FFFFFF;
+  --color-longevity-charcoal: #1F2937;
+  --color-longevity-forest: #6A7E59;
+  --color-longevity-gold: #FFC107;
+}
+
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc;
+    color: #0D2047;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display, .font-heading {
+    font-family: 'Montserrat', 'Poppins', -apple-system, sans-serif !important;
+    letter-spacing: -0.025em;
+    color: #0D2047;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+  }
+}
+
+/* Custom light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Executive light grid pattern */
+.executive-grid-light {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Athletic glows & shadows */
+.glow-electric {
+  box-shadow: 0 10px 30px -5px rgba(71, 88, 214, 0.25);
+}
+
+.glow-crimson {
+  box-shadow: 0 10px 30px -5px rgba(176, 12, 17, 0.25);
+}
+
+.glow-volt {
+  box-shadow: 0 10px 30px -5px rgba(174, 231, 16, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 10px 30px -5px rgba(255, 193, 7, 0.25);
+}
+
+.glow-forest {
+  box-shadow: 0 10px 30px -5px rgba(106, 126, 89, 0.25);
+}
